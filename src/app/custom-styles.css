@@ -1,0 +1,31 @@
+/* Custom styles to improve text contrast */
+
+/* h1, h2, h3, h4, h5, h6 {
+  color: #333333 !important;
+} */
+/* Improve contrast for gray text */
+.text-gray-500 {
+  color: #555555 !important;
+}
+
+.text-gray-600 {
+  color: #444444 !important;
+}
+
+.text-gray-700 {
+  color: #333333 !important;
+}
+
+/* Improve contrast for links */
+a.text-gray-500:hover,
+a.text-gray-600:hover,
+a.text-gray-700:hover {
+  color: #0055aa !important;
+}
+
+/* Improve contrast for social media icons */
+.text-gray-500 svg,
+.text-gray-600 svg,
+.text-gray-700 svg {
+  color: #444444 !important;
+}

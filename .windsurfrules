@@ -1,0 +1,57 @@
+# .windsurfrule
+# Configuration and conventions for the Next.js Website Project
+
+[Project]
+name = Website Project
+framework = Next.js
+frontend = true
+backend = true
+routing = file-system
+rendering = SSR + SSG
+
+[Directories]
+pages = ./src/pages
+components = ./src/components
+api_routes = ./src/pages/api
+public_assets = ./public
+styles = ./src/styles
+
+[NamingConventions]
+components = PascalCase
+pages = kebab-case
+api_routes = snake_case
+css_modules = camelCase
+
+[Rules]
+allow_dynamic_routes = true
+enforce_typescript = false
+use_tailwind = true
+optimize_images = true
+require_seo_tags = true
+require_meta_description = true
+enforce_responsive_design = true
+
+[Deployment]
+platform = Vercel
+build_command = next build
+start_command = next start
+env_file = .env.local
+
+[Testing]
+enable_unit_tests = false
+enable_e2e_tests = false
+
+[Security]
+sanitize_user_input = true
+validate_api_payloads = true
+cors_policy = strict
+
+[Notes]
+- no more than 400 lines of code per file
+- refrence project.md for detailed project overview
+- refrence todo.md for detailed and tasks to be done
+- use tailwindcss for styling
+- use typescript for typing
+- use eslint for linting
+- use prettier for formatting
+#use vercel for deployment
